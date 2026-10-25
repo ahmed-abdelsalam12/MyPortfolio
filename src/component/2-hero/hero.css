@@ -1,0 +1,83 @@
+/* 1- hero design*/
+
+.hero {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+/* left-sectio n*/
+.left-section {
+  width: 60%;
+}
+/* element in left Section*/
+#img {
+  border-radius: 50%;
+  border: 2px solid #999;
+}
+h1 {
+  color: var(--title);
+  margin: 1rem 0;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+}
+p {
+  line-height: 1.5rem;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* right-section ==> animation */
+.right-section {
+  width: 50%;
+}
+.ani{
+  width: 100%;
+  translate: 130px 30px;
+}
+/*================= responsive ===============*/
+
+
+
+@media (width < 1250px) {
+
+.right-section{
+
+display: none;
+}
+.left-section {
+  width: 100%;
+   flex-grow: 1;
+}
+
+}
+
+/*stretch the width*/
+
+
+@media (width < 880px) {
+  .hero {
+   
+   width:100% ;
+  
+    padding: 0 1.5rem;
+  }
+
+
+
+}
+
+
+@media (width < 522px) {
+  .hero{
+   
+   width:100% ;
+  
+    padding: 0 .5rem;
+  }
+
+
+
+}

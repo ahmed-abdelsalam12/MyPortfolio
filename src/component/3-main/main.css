@@ -1,0 +1,155 @@
+/* main design */
+.main {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 1rem;
+}
+/* left-project ==> (buttons) design */
+
+.left-project ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.left-project ul li button {
+  padding: 0.45rem 0;
+
+  background-color: rgba(61, 62, 73, 0.581);
+  width: 10rem;
+  height: 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.05rem;
+  opacity: 0.6;
+}
+.left-project ul li button:hover {
+  transition: 0.3s;
+  background-color: rgba(116, 125, 225, 0.275);
+  opacity: 1;
+}
+
+.left-project ul li button.active {
+  background-color: #666;
+ font-size: 1.06rem;
+  letter-spacing: 0.6px;
+  padding: 0.55rem 0;
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* projects design */
+.right-projects {
+  
+  justify-content: center;
+  display: flex;
+  column-gap: 15px;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.right-projects section {
+    background-color: var(--secondary);
+  border: 2px solid var(--border-section);
+  height: 20rem;
+  position: relative;
+  width: 15rem;
+  border-radius: 5px;
+}
+.right-projects section:hover {
+  border: 2px solid var(--border-section-hover);
+  transition: 0.3s;
+  rotate: 1deg;
+  transform: scale(1.02);
+  cursor: pointer;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+
+/* change element in sections */
+
+.right-projects section img {
+  height: 40%;
+  width: 100%;
+  border-radius: 4px;
+}
+.card-body {
+  padding: 1rem 0.4rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* change element in card-body in sections */
+.right-projects section h4 {
+  margin: 10px 0;
+  font-size: 17px;
+  color: var(--title);
+}
+
+.right-projects section p {
+  margin-top: 15px;
+  color: var(--gray);
+  font-size: 0.8rem;
+  line-height: 17px;
+}
+.icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+.icon-link,
+.icon-github {
+  font-size: 21px;
+  cursor: pointer;
+  color: var(--gray);
+}
+
+.icon-link:hover,
+.icon-github:hover {
+  color: var(--icon-hover);
+  transform: scale(1.15);
+}
+/*================= responsive ===============*/
+
+/*vertical*/
+
+@media (width <  760px) {
+  .main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+  }
+}
+
+/*stretch the width*/
+
+
+
+@media (width < 880px) {
+  .main{
+   
+   width:100% ;
+  
+    padding: 0 1.5rem;
+  }
+
+
+
+}
+@media (width < 522px) {
+  .main{
+   
+   width:100% ;
+  
+    padding: 0 .5rem;
+  }
+
+
+
+}

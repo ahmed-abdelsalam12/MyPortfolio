@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2px;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --gray: rgba(199, 191, 191, 0.515);
+  --primary: black;
+  --secondary: #181818;
+  --border: rgba(63, 63, 70, 0.4);
+  --title: #fff;
+  --subtitle: rgb(82 82 91);
+  --icon-hover: rgba(238, 226, 226, 0.515);
+  --bgHeader: rgb(39, 39, 42);
+  --blue: rgba(83, 131, 252, 0.799);
+  --border-section: rgba(27, 62, 78, 0.685);
+  --border-section-hover: rgba(60, 126, 156, 0.685);
+  --maroon: #9e4673;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--primary);
+  color: #eee0e0;
+}
+.container {
+  border: 2px solid var(--border);
+  background-color: var(--secondary);
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 80%;
+}
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin: 3rem 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: initial;
+  transition: 0.2s;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.95);
+  
+}
+.flex {
+  display: flex;
+}
+/* code scroll bar ==> ( constant)  */
+::-webkit-scrollbar {
+  width: 0.88rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* for Firefox */
+html {
+  scrollbar-color: #999 #3d4a59;
+
+  scroll-behavior: smooth;
+}
+
+/* scroll btn*/
+.scroll2up {
+  font-size: 21px;
+  background-color: var(--maroon);
+  padding: 0.8rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+}
+.scroll2up:hover {
+  background-color: #c33d82;
+  transition: 0.3s;
+}
+
+/*responsive*/
+
+@media (width < 900px) {
+  .scroll2up {
+    font-size: 17px;
+ padding: 0.7rem;
+    right: 2%;
+  }
+}
+ @media (width < 575PX) {
+  .scroll2up {
+  
+ 
+    right: 1%;
+  }
+}
+@media (width < 470PX) {
+  .scroll2up {
+  
+
+    right: .5%;
+  }
+}
+@media (width < 420PX) {
+  .scroll2up {
+  
+
+    right: .2%;
+  }
+}
+@media (width < 380PX) {
+  .scroll2up {
+  
+    font-size: 13.8px;
+      right: 0%;
+  }
+}

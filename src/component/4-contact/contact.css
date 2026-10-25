@@ -1,0 +1,152 @@
+/* contact design */
+
+.contact {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* element in address */
+.envelope {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.icon-envelope {
+  color: var(--gray);
+  font-size: 26px;
+}
+.address p {
+  color: var(--gray);
+  line-height: 1.6rem;
+}
+
+/* box-form design */
+.box-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5;
+}
+/* element in form*/
+
+label {
+  color: var(--gray);
+  margin-right: 1rem;
+}
+
+.inp,
+.textarea {
+  all: unset;
+  background-color: rgba(63, 63, 70, 0.4);
+  border: 1px solid rgba(0, 255, 221, 0.111);
+  border-radius: 5px;
+  width: 18rem;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  padding: 0.5rem 0.7rem;
+}
+
+.textarea {
+  overflow-wrap: break-word;
+  
+  min-height: 9rem;
+  resize: vertical;
+}
+.inp:focus,
+.textarea:focus {
+  border: 1px solid rgb(45 212 191);
+}
+.inp:hover,
+.textarea:hover {
+  border: 1px solid rgb(45 212 191);
+}
+.box-message {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.submit {
+  padding: 0.75rem 2rem;
+  border: 1px solid rgb(45 212 191);
+   margin-top: 3rem;
+  background-color: rgba(63, 63, 70, 0.4);
+
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.05rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/*================= responsive ===============*/
+
+@media (width < 1250px) {
+  .animation-form {
+    display: none;
+  }
+}
+/*vertical*/
+@media (width < 760px) {
+  .address {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-message {
+    gap: 1rem;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box-email {
+    gap: 1rem;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inp,
+  .textarea {
+    margin-left: 0;
+    padding: 0.7rem 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .submit {
+    width: 30%;
+    align-self: center;
+  }
+}
+
+/*stretch the width*/
+
+@media (width < 880px) {
+  .contact {
+    width: 100%;
+
+    padding: 0 1.5rem;
+  }
+}
+@media (width < 522px) {
+  .contact{
+   
+   width:100% ;
+  
+    padding: 0 .5rem;
+  }
+
+
+
+}
