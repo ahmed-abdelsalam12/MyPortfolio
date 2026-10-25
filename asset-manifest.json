@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MyPortfolio/static/css/main.31284842.css",
+    "main.js": "/MyPortfolio/static/js/main.fadac409.js",
+    "static/media/img9.png": "/MyPortfolio/static/media/img9.cd018e404ace6fe1dfbe.png",
+    "static/media/img1.png": "/MyPortfolio/static/media/img1.85cbff061c9a2a389941.png",
+    "static/media/img8.png": "/MyPortfolio/static/media/img8.3f657eba2ad1610d1ccd.png",
+    "static/media/img2.png": "/MyPortfolio/static/media/img2.4063df3e7ecb3ef7b654.png",
+    "static/media/img5.png": "/MyPortfolio/static/media/img5.105e8361b0c855aec7bf.png",
+    "static/media/img4.png": "/MyPortfolio/static/media/img4.73ab1febe6638848deb9.png",
+    "static/media/img6.png": "/MyPortfolio/static/media/img6.db35dc336770fc63e35b.png",
+    "static/media/avatar.png": "/MyPortfolio/static/media/avatar.b081d403f7ee8e9920e9.png",
+    "static/media/img3.png": "/MyPortfolio/static/media/img3.67f8b36bf285b745362c.png",
+    "static/media/img7.png": "/MyPortfolio/static/media/img7.d7becdb87a3f86648bd5.png",
+    "index.html": "/MyPortfolio/index.html",
+    "main.31284842.css.map": "/MyPortfolio/static/css/main.31284842.css.map",
+    "main.fadac409.js.map": "/MyPortfolio/static/js/main.fadac409.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31284842.css",
+    "static/js/main.fadac409.js"
+  ]
+}
